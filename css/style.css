@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #008C45, #fff, #CD212A);
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #d32f2f;
+}
+
+.homePageContent {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.homePageContent div {
+    margin-bottom: 40px;
+}
+
+.homePageContent h1,
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.homePageContent p {
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+.oNama,
+.ambijent {
+    border-left: 4px solid #008C45;
+    padding-left: 10px;
+}
+
+.nasTim,
+.filozofija {
+    border-right: 4px solid #CD212A;
+    padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px, 0;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+th {
+    background-color: #008C45;
+    color: white;
+    font-size: 18px;
+}
+
+td {
+    font-size: 18px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+}
+
+td:nth-child(2) {
+    font-weight: bold;
+    color: #CD212A;
+}
+
+.lokacija {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    text-align: center;
+    padding: 20px;
+}
+
+.lokacija h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.lokacija p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.kontakt-forma {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #008C45;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kontakt-forma h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #CD212A;
+}
+
+.kontakt-forma label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.kontakt-forma input,
+.kontakt-forma textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.kontakt-forma button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #008C45;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.kontakt-forma button:hover {
+    background-color: #00572c;
+}
+
+.galerija {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.galerija img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.galerija img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: linear-gradient(to right, #008C45, #fff, #CD212A);
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
